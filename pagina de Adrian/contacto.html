@@ -4,46 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Tu Empresa</title>
-
-    <!-- 1. Cargamos Bootstrap desde internet para la estructura de la Barra Principal -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- 2. Volvemos a enlazar TU archivo de estilos personalizado (style.css) -->
+    <!-- Enlazamos TU archivo de estilos personalizado -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
-    <header data-bs-theme="dark">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">TuEmpresa</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <nav class="main-navbar">
+        <div class="nav-container">
+            <a class="nav-logo" href="#">TuEmpresa</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a class="active" href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <!-- Encabezado Principal (Con margen superior para que la barra fija no lo tape) -->
-    <header class="contact-header" style="margin-top: 56px;">
+    <!-- Encabezado Principal -->
+    <header class="contact-header">
         <h1>Contáctanos</h1>
         <p>Estamos listos para ayudarte a hacer realidad tu proyecto.</p>
     </header>
@@ -93,7 +72,7 @@
                     <input type="email" id="email" name="email" placeholder="nombre@empresa.com" required>
                 </div>
 
-                <!-- NUEVO CAMPO: Número de Teléfono -->
+                <!-- Campo: Número de Teléfono -->
                 <div class="form-group">
                     <label for="phone">Número de Teléfono</label>
                     <input type="tel" id="phone" name="phone" placeholder="Ej. +56 9 1234 5678" required>
@@ -110,7 +89,5 @@
 
     </main>
 
-    <!-- Script de Bootstrap (Para que funcione el menú de la barra en celulares) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
