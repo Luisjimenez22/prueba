@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Tu Empresa</title>
 
+    <!-- 1. Cargamos Bootstrap desde internet para la estructura de la Barra Principal -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="carousel.css" rel="stylesheet">
+    <!-- 2. Volvemos a enlazar TU archivo de estilos personalizado (style.css) -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
     <header data-bs-theme="dark">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
@@ -39,86 +42,75 @@
         </nav>
     </header>
 
-    <main class="container marketing" style="margin-top: 7rem;">
+    <!-- Encabezado Principal (Con margen superior para que la barra fija no lo tape) -->
+    <header class="contact-header" style="margin-top: 56px;">
+        <h1>Contáctanos</h1>
+        <p>Estamos listos para ayudarte a hacer realidad tu proyecto.</p>
+    </header>
+
+    <!-- Contenedor Principal de la Pestaña -->
+    <main class="contact-container">
         
-        <header class="text-center mb-5">
-            <h1 class="display-4 fw-normal" style="color: #212529;">Contáctanos</h1>
-            <p class="lead text-muted">Estamos listos para ayudarte a hacer realidad tu proyecto.</p>
-        </header>
-
-        <hr class="featurette-divider">
-
-        <div class="row g-5">
+        <!-- Columna Izquierda: Información de Contacto -->
+        <section class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p>Si lo prefieres, puedes comunicarte con nosotros directamente a través de nuestros canales oficiales.</p>
             
-            <section class="col-md-5">
-                <h2 class="h3 mb-4" style="color: #212529;">Información de Contacto</h2>
-                <p class="text-muted">Si lo prefieres, puedes comunicarte con nosotros directamente a través de nuestros canales oficiales.</p>
-                
-                <div class="mb-4">
-                    <h5 class="fw-bold mb-1">📍 Dirección:</h5>
-                    <p class="text-muted">Av. Principal, Oficina 102, Ciudad</p>
-                </div>
-                
-                <div class="mb-4">
-                    <h5 class="fw-bold mb-1">📞 Teléfono / WhatsApp:</h5>
-                    <p class="text-muted">+56 9 1234 5678</p>
-                </div>
-                
-                <div class="mb-4">
-                    <h5 class="fw-bold mb-1">✉️ Correo Electrónico:</h5>
-                    <p class="text-muted">contacto@tuempresa.com</p>
-                </div>
-                
-                <div class="mb-4">
-                    <h5 class="fw-bold mb-1">⏰ Horario de Atención:</h5>
-                    <p class="text-muted">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-                </div>
-            </section>
+            <div class="info-item">
+                <strong>📍 Dirección:</strong>
+                <p>Av. Principal, Oficina 102, Ciudad</p>
+            </div>
+            
+            <div class="info-item">
+                <strong>📞 Teléfono / WhatsApp:</strong>
+                <p>+56 9 1234 5678</p>
+            </div>
+            
+            <div class="info-item">
+                <strong>✉️ Correo Electrónico:</strong>
+                <p>contacto@tuempresa.com</p>
+            </div>
+            
+            <div class="info-item">
+                <strong>⏰ Horario de Atención:</strong>
+                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+            </div>
+        </section>
 
-            <section class="col-md-7">
-                <div class="p-4 rounded-3" style="background-color: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-                    
-                    <div class="text-center mb-4">
-                        <h2 class="h3 fw-normal" style="color: #212529;">¿Tienes un Proyecto en Mente?</h2>
-                        <p class="small text-muted">Escríbenos para cotizar prefabricados, hormigón o el desarrollo integral de tu obra.</p>
-                    </div>
-                    
-                    <form action="#" method="POST">
-                        <div class="mb-3 text-start">
-                            <label for="name" class="form-label fw-semibold" style="color: #495057;">Nombre o Empresa</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Ej. Juan Pérez / Constructora X" required style="padding: 0.75rem;">
-                        </div>
-                        
-                        <div class="mb-3 text-start">
-                            <label for="email" class="form-label fw-semibold" style="color: #495057;">Correo Electrónico</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="nombre@empresa.com" required style="padding: 0.75rem;">
-                        </div>
-
-                        <div class="mb-3 text-start">
-                            <label for="phone" class="form-label fw-semibold" style="color: #495057;">Número de Teléfono</label>
-                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Ej. +56 9 1234 5678" required style="padding: 0.75rem;">
-                        </div>
-                        
-                        <div class="mb-4 text-start">
-                            <label for="details" class="form-label fw-semibold" style="color: #495057;">Detalles del Proyecto</label>
-                            <textarea class="form-control" id="details" name="details" placeholder="Cuéntanos qué necesitas (m³ de hormigón, metros cuadrados a remodelar, estructuras metálicas, etc.)" rows="5" required style="padding: 0.75rem;"></textarea>
-                        </div>
-                        
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary w-100 fw-semibold" style="max-width: 250px; background-color: #0d6efd; border-color: #0d6efd; padding: 0.75rem 1.5rem;">
-                                Enviar Mensaje
-                            </button>
-                        </div>
-                    </form>
+        <!-- Columna Derecha: Formulario de image_55e769.png + Campo Teléfono -->
+        <section class="contact-form-container">
+            <h2>¿Tienes un Proyecto en Mente?</h2>
+            <p class="form-subtitle">Escríbenos para cotizar prefabricados, hormigón o el desarrollo integral de tu obra.</p>
+            
+            <form action="#" method="POST" class="project-form">
+                <div class="form-group">
+                    <label for="name">Nombre o Empresa</label>
+                    <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez / Constructora X" required>
                 </div>
-            </section>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@empresa.com" required>
+                </div>
 
-        </div>
-
-        <hr class="featurette-divider">
+                <!-- NUEVO CAMPO: Número de Teléfono -->
+                <div class="form-group">
+                    <label for="phone">Número de Teléfono</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ej. +56 9 1234 5678" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="details">Detalles del Proyecto</label>
+                    <textarea id="details" name="details" placeholder="Cuéntanos qué necesitas (m³ de hormigón, metros cuadrados a remodelar, estructuras metálicas, etc.)" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
 
     </main>
 
+    <!-- Script de Bootstrap (Para que funcione el menú de la barra en celulares) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
