@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | FLOMAR SpA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            background-color: #0f172a; 
+            color: #f8fafc; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        }
+        /* Banner superior fino */
+        .hero-info { 
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=1280'); 
+            background-size: cover; 
+            background-position: center;
+            padding: 90px 0 60px 0; 
+            text-align: center; 
+            border-bottom: 3px solid #ca8a04; 
+        }
+        /* Tarjetas de Diferenciadores (Finas y con sutil transición) */
+        .card-feature { 
+            background: #1e293b; 
+            border: 1px solid rgba(202, 138, 4, 0.15); 
+            transition: all 0.3s ease; 
+            border-radius: 12px; 
+            height: 100%;
+        }
+        .card-feature:hover { 
+            transform: translateY(-5px); 
+            background: #273549;
+            border-color: #ca8a04;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        /* Iconos dorados de FLOMAR */
+        .icon-gold { 
+            font-size: 32px; 
+            color: #ca8a04; 
+            margin-bottom: 15px; 
+        }
+        /* Sección de Servicios - Lista Fina */
+        .service-item {
+            background: rgba(30, 41, 59, 0.5);
+            border-left: 4px solid #ca8a04;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+            transition: 0.2s;
+        }
+        .service-item:hover {
+            background: rgba(30, 41, 59, 0.9);
+        }
+        .text-gold {
+            color: #ca8a04;
+        }
+        .btn-back {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #cbd5e1;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .btn-back:hover {
+            background-color: #ca8a04;
+            color: white;
+            border-color: #ca8a04;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <a href="index.html" class="btn btn-back text-decoration-none">
+            <i class="fas fa-arrow-left me-2"></i> Volver al Inicio
+        </a>
+    </div>
+
+    <header class="hero-info mb-5">
+        <div class="container">
+            <span class="text-uppercase fw-bold tracking-wider text-gold" style="font-size: 13px; letter-spacing: 2px;">Conoce nuestra trayectoria</span>
+            <h1 class="display-5 fw-bold mt-2">Sobre Nosotros: <span class="text-gold">FLOMAR SpA</span></h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">Transformamos tus espacios, construimos tus ideas.</p>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-lg-9">
+                <p class="fs-5 lh-base">
+                    En <strong class="text-gold">FLOMAR SpA</strong>, somos una empresa con sede en <strong>La Serena</strong> dedicada a transformar ideas en realidades tangibles. Nacimos con la firme convicción de ofrecer verdaderas <strong>Soluciones Integrales</strong> en el sector de la construcción, combinando experiencia técnica, materiales de primer nivel y un compromiso inquebrantable con la excelencia.
+                </p>
+                <p class="text-muted mt-3">
+                    Más que una constructora, somos un aliado estratégico para nuestros clientes. Nos enorgullece contar con la capacidad operativa para ejecutar obras de alta complejidad en el desarrollo de la construcción, viviendas urbanas y proyectos comerciales.
+                </p>
+            </div>
+        </div>
+
+        <div class="row pt-4 mb-5">
+            <div class="col-12 text-center mb-4">
+                <h2 class="fw-bold">¿Qué nos <span class="text-gold">distingue</span>?</h2>
+                <div style="width: 60px; height: 3px; background: #ca8a04; margin: 10px auto 30px auto;"></div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card card-feature p-4">
+                    <i class="fas fa-hammer icon-gold"></i>
+                    <h5 class="fw-bold">Fabricación Propia</h5>
+                    <p class="small text-muted mb-0">Elaboramos artículos de hormigón, cemento, yeso, madera y productos metálicos estructurales. Esto garantiza un control de calidad riguroso y directo en cada obra.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card card-feature p-4">
+                    <i class="fas fa-layer-group icon-gold"></i>
+                    <h5 class="fw-bold">Estructuras y Montajes</h5>
+                    <p class="small text-muted mb-0">Contamos con conocimiento e infraestructura para fabricar, ensamblar y montar nuestras propias estructuras metálicas, permitiendo un control absoluto de precisión y tiempos.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card card-feature p-4">
+                    <i class="fas fa-shield-alt icon-gold"></i>
+                    <h5 class="fw-bold">Rigor Técnico Global</h5>
+                    <p class="small text-muted mb-0">Abordamos integralmente el ciclo completo de la edificación con metodologías avanzadas, optimización de recursos y estricto cumplimiento normativo vigente.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card card-feature p-4">
+                    <i class="fas fa-clipboard-check icon-gold"></i>
+                    <h5 class="fw-bold">Gestión Centralizada</h5>
+                    <p class="small text-muted mb-0">Asumimos la titularidad y supervisión exhaustiva de principio a fin: planificación, control de plazos en terreno y estricta mitigación de riesgos operativos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-4">
+            <div class="col-12 text-center mb-4">
+                <h2 class="fw-bold">Nuestros <span class="text-gold">Servicios Especializados</span></h2>
+                <p class="text-muted">Soluciones habitacionales y comerciales bajo los más altos estándares.</p>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-item">
+                    <h5 class="fw-bold text-gold"><i class="fas fa-home me-2"></i> Proyectos Habitacionales</h5>
+                    <p class="small text-muted mb-0">Diseño y construcción de espacios pensados para el confort y la durabilidad, con especial enfoque en viviendas urbanas y desarrollo social.</p>
+                </div>
+                <div class="service-item">
+                    <h5 class="fw-bold text-gold"><i class="fas fa-tools me-2"></i> Remodelación Integral</h5>
+                    <p class="small text-muted mb-0">Modernización y vitalidad para espacios comerciales y residenciales, adaptándolos de forma óptima a las nuevas necesidades y tendencias.</p>
+                </div>
+                <div class="service-item">
+                    <h5 class="fw-bold text-gold"><i class="fas fa-fill-drip me-2"></i> Elementos de Hormigón y Vibrados</h5>
+                    <p class="small text-muted mb-0">Suministro y aplicación de componentes prefabricados y mezclas estructurales de alta resistencia que cumplen exigentes normas de dosificación.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="service-item">
+                    <h5 class="fw-bold text-gold"><i class="fas fa-calculator me-2"></i> Cálculo, Cubicación y Logística</h5>
+                    <p class="small text-muted mb-0">Cuantificación técnica precisa de insumos para maximizar el presupuesto, minimizando mermas mediante una distribución estratégica en zona de trabajo.</p>
+                </div>
+                <div class="service-item">
+                    <h5 class="fw-bold text-gold"><i class="fas fa-shield-cat me-2"></i> Mantención de Infraestructura</h5>
+                    <p class="small text-muted mb-0">Protección y cuidado de tus inversiones edilicias a largo plazo a través de programas personalizados de mantenimiento preventivo y correctivo.</p>
+                </div>
+                <div class="service-item">
+                    <h5 class="fw-bold text-gold"><i class="fas fa-industry me-2"></i> Fabricación y Montaje Metálico</h5>
+                    <p class="small text-muted mb-0">Diseño, producción y ensamblaje profesional de estructuras de acero de alta resistencia idóneas para cualquier envergadura arquitectónica.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12 text-center p-4 bg-dark rounded-4 border border-secondary" style="--bs-bg-opacity: .4;">
+                <h4 class="fw-bold text-gold">Nuestro Compromiso</h4>
+                <p class="mb-0 mx-auto text-muted style" style="max-width: 800px;">
+                    Respaldados por un equipo humano y técnico de primer nivel, en <strong>FLOMAR SpA</strong> trabajamos con los más altos estándares de seguridad y eficiencia para lograr resultados impecables en cada obra encomendada.
+                </p>
+                <small class="d-block mt-3 text-gold fw-bold"><i class="fas fa-map-marker-alt"></i> Islón Mz M St 7, La Serena, Chile.</small>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center p-4 border-top border-secondary" style="background-color: #0b111e;">
+        <p class="small text-muted mb-0">&copy; 2026 FLOMAR SpA - Soluciones Integrales. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
